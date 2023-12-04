@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crop Prediction</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Input Data</h5>
+            <form action="/fertilizer-result" method="POST">
+                <div class="form-group">
+                    <label for="inputN">Nitrogen (N)</label>
+                    <input type="number" class="form-control" id="inputN" name="inputN" placeholder="Enter N value" required>
+                </div>
+                <div class="form-group">
+                    <label for="inputP">Phosphorus (P)</label>
+                    <input type="number" class="form-control" id="inputP" name="inputP" placeholder="Enter P value" required>
+                </div>
+                <div class="form-group">
+                    <label for="inputK">Potassium (K)</label>
+                    <input type="number" class="form-control" id="inputK" name="inputK" placeholder="Enter K value" required>
+                </div>
+                <div class="form-group">
+                    <label for="inputTemp">Temperature</label>
+                    <input type="number" class="form-control" id="inputTemp" name="inputTemp" placeholder="Enter temperature" required>
+                </div>
+                <div class="form-group">
+                    <label for="inputHumidity">Humidity</label>
+                    <input type="number" class="form-control" id="inputHumidity" name="inputHumidity" placeholder="Enter humidity" required>
+                </div>
+                <div class="form-group">
+                    <label for="inputMoisture">Moisture</label>
+                    <input type="number" class="form-control" id="inputMoisture" name="inputMoisture" placeholder="Enter moisture" required>
+                </div>
+                <div class="form-group">
+                    <label for="selectCropType">Crop Type</label>
+                    <select class="form-control" id="selectCropType" name="selectCropType">
+                        <option value="">Select Crop Type</option>
+                        <option value="Maize">Maize</option>
+                        <option value="Sugarcane">Sugarcane</option>
+                        <option value="Cotton">Cotton</option>
+                        <option value="Tobacco">Tobacco</option>
+                        <option value="Paddy">Paddy</option>
+                        <option value="Barley">Barley</option>
+                        <option value="Wheat">Wheat</option>
+                        <option value="Millets">Millets</option>
+                        <option value="Oil seeds">Oil seeds</option>
+                        <option value="Pulses">Pulses</option>
+                        <option value="Ground Nuts">Ground Nuts</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="selectSoilType">Soil Type</label>
+                    <select class="form-control" id="selectSoilType" name="selectSoilType">
+                        <option value="">Select Soil Type</option>
+                        <option value="Sandy">Sandy</option>
+                        <option value="Loamy">Loamy</option>
+                        <option value="Black">Black</option>
+                        <option value="Red">Red</option>
+                        <option value="Clayey">Clayey</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>

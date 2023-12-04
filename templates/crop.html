@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crop</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Input Data</h5>
+            <form action="/crop-predict" method="POST">
+                <div class="form-group">
+                    <label for="inputN">Nitrogen (N)</label>
+                    <input type="number" class="form-control" id="inputN" name="nitrogen" placeholder="Enter N value" required>
+                </div>
+                <div class="form-group">
+                    <label for="inputP">Phosphorus (P)</label>
+                    <input type="number" class="form-control" id="inputP" name="phosphorous" placeholder="Enter P value" required>
+                </div>
+                <div class="form-group">
+                    <label for="inputK">potassium (K)</label>
+                    <input type="number" class="form-control" id="inputK" name="potassium" placeholder="Enter K value" required>
+                </div>
+                <div class="form-group">
+                    <label for="inputTemp">Temperature</label>
+                    <input type="number" class="form-control" id="inputTemp" name="temperature" placeholder="Enter temperature" required>
+                </div>
+                <div class="form-group">
+                    <label for="inputRainfall">Rainfall</label>
+                    <input type="number" class="form-control" id="inputRainfall" name="rainfall" placeholder="Enter rainfall" required>
+                </div>
+                <div class="form-group">
+                    <label for="inputHumidity">Humidity</label>
+                    <input type="number" class="form-control" id="inputHumidity" name="humidity" placeholder="Enter Humidity" required>
+                </div>
+                <div class="form-group">
+                    <label for="inputPH">PH</label>
+                    <input type="number" class="form-control" id="inputPH" name="ph" placeholder="Enter PH" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
